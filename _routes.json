@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/assets/*",
+    "/static/*",
+    "/favicon.ico",
+    "/robots.txt"
+  ],
+  "rules": [
+    {
+      "path": "/editor*",
+      "to": "/editor.html",
+      "status": 200
+    },
+    {
+      "path": "/widget*",
+      "to": "/widget.html",
+      "status": 200
+    },
+    {
+      "path": "/docs*",
+      "to": "/docs.html",
+      "status": 200
+    },
+    {
+      "path": "/*",
+      "to": "/index.html",
+      "status": 200
+    }
+  ]
+}
